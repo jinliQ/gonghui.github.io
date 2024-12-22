@@ -7,11 +7,13 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #1a1a1a;
+    color: #e0e0e0;
 }
 
 .header {
-    background-color: #333;
+    background-color: #2b2b2b;
+    border-bottom: 3px solid #ffa500;
     color: white;
     padding: 1rem 0;
 }
@@ -28,17 +30,22 @@ body {
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
+    color: #ffa500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .nav-links a {
-    color: white;
+    color: #e0e0e0;
     text-decoration: none;
     padding: 0.5rem 1rem;
     margin-left: 1rem;
+    transition: all 0.3s ease;
 }
 
 .nav-links a:hover {
-    background-color: #555;
+    background-color: #ffa500;
+    color: #000;
     border-radius: 4px;
 }
 
@@ -52,7 +59,8 @@ body {
 }
 
 .forum-section {
-    background-color: white;
+    background-color: #2b2b2b;
+    border: 1px solid #333;
     padding: 1rem;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -61,7 +69,12 @@ body {
 .post-item {
     display: flex;
     padding: 1rem;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #333;
+    transition: all 0.3s ease;
+}
+
+.post-item:hover {
+    background-color: #333;
 }
 
 .post-avatar img {
@@ -72,22 +85,23 @@ body {
 }
 
 .post-title {
-    color: #333;
+    color: #ffa500;
     margin-bottom: 0.5rem;
 }
 
 .post-meta {
     font-size: 0.9rem;
-    color: #666;
+    color: #888;
     margin-bottom: 0.5rem;
 }
 
 .post-excerpt {
-    color: #444;
+    color: #ccc;
 }
 
 .sidebar {
-    background-color: white;
+    background-color: #2b2b2b;
+    border: 1px solid #333;
     padding: 1rem;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -110,22 +124,26 @@ body {
 }
 
 .tag {
-    background-color: #eee;
+    background-color: #333;
     padding: 0.3rem 0.8rem;
     border-radius: 20px;
     text-decoration: none;
-    color: #333;
+    color: #ffa500;
+    border: 1px solid #ffa500;
     font-size: 0.9rem;
+    transition: all 0.3s ease;
 }
 
 .tag:hover {
-    background-color: #ddd;
+    background-color: #ffa500;
+    color: #000;
 }
 
 .footer {
     text-align: center;
     padding: 1rem;
-    background-color: #333;
+    background-color: #2b2b2b;
+    border-top: 3px solid #ffa500;
     color: white;
     margin-top: 2rem;
 }
@@ -148,4 +166,28 @@ body {
         display: inline-block;
         margin: 0.5rem;
     }
+} 
+
+.guild-ranking {
+    padding: 10px;
+}
+
+.rank-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    border-bottom: 1px solid #333;
+}
+
+.rank {
+    color: #ffa500;
+    font-weight: bold;
+}
+
+.guild-name {
+    color: #e0e0e0;
+}
+
+.points {
+    color: #ffa500;
 } 
